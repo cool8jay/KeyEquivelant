@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+            <connections>
+                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="KeyEquivelant" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="KeyEquivelant" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="About KeyEquivelant" id="5kV-Vb-QxS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                            <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                            <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                            <menuItem title="Services" id="NMo-om-nkz">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                            <menuItem title="Hide KeyEquivelant" keyEquivalent="h" id="Olw-nP-bQN">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="Kd2-mp-pUS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                            <menuItem title="Quit KeyEquivelant" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Valid" id="qWL-Oi-ok4">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Valid" id="OGl-Bv-nCo">
+                        <items>
+                            <menuItem title="Item 1" keyEquivalent="a" id="fjC-TA-u6p">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="l7I-U4-Tcm"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 2" keyEquivalent="A" id="mjm-KK-GLL">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES"/>
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="luE-UX-RVu"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 3" keyEquivalent="A" id="322-16-qCO">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="cuq-JU-g9p"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 4" keyEquivalent="a" id="Twk-Xe-VUK">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="CYy-QF-Vv6"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 5" keyEquivalent="A" id="1zn-mK-CcO">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES"/>
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="r5Y-6k-G6L"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 6" keyEquivalent="A" id="9Kc-7W-xHl">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" control="YES" command="YES"/>
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="Roc-sd-GUj"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 7" keyEquivalent="a" id="Vty-QQ-GNU">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="mvY-Zm-r1M"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 8" keyEquivalent="a" id="7P0-rM-r9T">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" option="YES"/>
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="rxa-a2-LIs"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 9" keyEquivalent="A" id="zIw-rE-VaK">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" control="YES" option="YES"/>
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="O5g-Zk-oFf"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 10" keyEquivalent="A" id="1JI-Ms-Orh">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" control="YES" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="hzk-Vi-1em"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 11" keyEquivalent="a" id="8AH-u9-mCm">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="t4F-tl-V6X"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 12" keyEquivalent="a" id="3OZ-iH-sqe">
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="8Hs-aU-FD1"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 13" keyEquivalent="a" id="var-s3-Lvb">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES"/>
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="vM4-rM-R4P"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 14" keyEquivalent="A" id="yDc-1f-G3g">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES"/>
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="GpY-PP-DBx"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 15" keyEquivalent="A" id="F7u-qM-SJ0">
+                                <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="AVb-8Y-nz8"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 16" keyEquivalent="a" id="LJC-W3-PoQ">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="YVe-2g-QXC"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Alternate" id="vX0-hF-iDh">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Alternate" id="Wnh-LG-El2">
+                        <items>
+                            <menuItem title="Alternate Item 1" keyEquivalent="s" id="36C-PD-UJU">
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="vIk-Si-JYQ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Alternate Item 2" alternate="YES" keyEquivalent="s" id="yyL-ab-qhG">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="HdY-OB-fg0"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Window" id="aUF-d1-5bR">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
+                        <items>
+                            <menuItem title="Minimize" keyEquivalent="m" id="OY7-WF-poV">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="VwT-WD-YPe"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Zoom" id="R4o-n2-Eq4">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="performZoom:" target="-1" id="DIl-cC-cCs"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="eu3-7i-yIM"/>
+                            <menuItem title="Bring All to Front" id="LE2-aR-0XJ">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="DRN-fu-gQh"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="178" y="-132"/>
+        </menu>
+        <window title="KeyEquivelant" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCP-5h-OaG">
+                        <rect key="frame" x="210" y="173" width="81" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bT6-nl-U00">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="buttonAction:" target="F70-Q2-YR5" id="Jf5-0B-htV"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="265" y="299"/>
+        </window>
+        <customObject id="F70-Q2-YR5" customClass="ViewController">
+            <connections>
+                <outlet property="button" destination="aCP-5h-OaG" id="54F-m6-suY"/>
+                <outlet property="view" destination="EiT-Mj-1SZ" id="zMB-ak-1he"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>
