@@ -9,8 +9,6 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
-    
     NSMenu *menu = [NSApp mainMenu];
     
     NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:@"coding"
@@ -18,44 +16,43 @@
                                            keyEquivalent:@""];
     
     NSMenu *subMenu = [[NSMenu alloc] initWithTitle:@"coding"];
-    
-    
+        
     {
         NSMenuItem *item1 = [[NSMenuItem alloc] initWithTitle:@"coding 1"
                                                        action:@selector(menuItemAction:)
                                                 keyEquivalent:@"b"];
         
-        [item1 setKeyEquivalentModifierMask:NSEventModifierFlagControl|NSEventModifierFlagOption];
+        item1.keyEquivalentModifierMask = NSEventModifierFlagControl|NSEventModifierFlagOption;
         
         NSMenuItem *item2 = [[NSMenuItem alloc] initWithTitle:@"coding 2"
                                                        action:@selector(menuItemAction:)
                                                 keyEquivalent:@"b"];
         
-        [item2 setKeyEquivalentModifierMask:NSEventModifierFlagControl|NSEventModifierFlagCommand];
+        item2.keyEquivalentModifierMask = NSEventModifierFlagControl|NSEventModifierFlagCommand;
         
         NSMenuItem *item3 = [[NSMenuItem alloc] initWithTitle:@"coding 3"
                                                        action:@selector(menuItemAction:)
                                                 keyEquivalent:@"b"];
         
-        [item3 setKeyEquivalentModifierMask:NSEventModifierFlagControl];
+        item3.keyEquivalentModifierMask = NSEventModifierFlagControl;
         
         NSMenuItem *item4 = [[NSMenuItem alloc] initWithTitle:@"coding 4"
                                                        action:@selector(menuItemAction:)
                                                 keyEquivalent:@"B"];
         
-        [item4 setKeyEquivalentModifierMask:NSEventModifierFlagControl|NSEventModifierFlagOption];
+        item4.keyEquivalentModifierMask = NSEventModifierFlagControl|NSEventModifierFlagOption;
         
         NSMenuItem *item5 = [[NSMenuItem alloc] initWithTitle:@"coding 5"
                                                        action:@selector(menuItemAction:)
                                                 keyEquivalent:@"B"];
         
-        [item5 setKeyEquivalentModifierMask:NSEventModifierFlagControl|NSEventModifierFlagCommand];
+        item5.keyEquivalentModifierMask = NSEventModifierFlagControl|NSEventModifierFlagCommand;
         
         NSMenuItem *item6 = [[NSMenuItem alloc] initWithTitle:@"coding 6"
                                                        action:@selector(menuItemAction:)
                                                 keyEquivalent:@"B"];
         
-        [item6 setKeyEquivalentModifierMask:NSEventModifierFlagControl];
+        item6.keyEquivalentModifierMask = NSEventModifierFlagControl;
         
         [subMenu addItem:item1];
         [subMenu addItem:item2];
