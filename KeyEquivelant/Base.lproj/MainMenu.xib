@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="17D102" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -64,9 +64,9 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="Valid" id="qWL-Oi-ok4">
+                <menuItem title="Menu" id="qWL-Oi-ok4">
                     <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="Valid" id="OGl-Bv-nCo">
+                    <menu key="submenu" title="Menu" id="OGl-Bv-nCo">
                         <items>
                             <menuItem title="Item 1" keyEquivalent="a" id="fjC-TA-u6p">
                                 <modifierMask key="keyEquivalentModifierMask"/>
@@ -209,6 +209,33 @@
                         </items>
                     </menu>
                 </menuItem>
+                <menuItem title="Menu" id="HyA-Hv-wf9">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Menu" id="GtK-MV-aG2">
+                        <items>
+                            <menuItem title="Item 1" keyEquivalent="" id="Fod-YE-yCd">
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="Wx6-Rm-6Kb"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 2" keyEquivalent="" id="hiQ-B9-MLB">
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="8OB-qv-Jgm"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 3" keyEquivalent="" id="wVu-O1-uJw">
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="jwD-qC-zit"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 4" keyEquivalent="" id="hB2-C3-yLR">
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="vvh-pT-IPX"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
             </items>
             <point key="canvasLocation" x="178" y="-132"/>
         </menu>
@@ -216,7 +243,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>

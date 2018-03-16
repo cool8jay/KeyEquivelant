@@ -14,7 +14,7 @@
     
     {
         // this combination will not work as shortcut
-        self.button.keyEquivalent = @"q";
+        self.button.keyEquivalent = @"c";
         self.button.keyEquivalentModifierMask = NSEventModifierFlagControl;
     }
 }
