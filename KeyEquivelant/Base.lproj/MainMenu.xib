@@ -213,14 +213,14 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Menu" id="GtK-MV-aG2">
                         <items>
-                            <menuItem title="Item 1" keyEquivalent="" id="Fod-YE-yCd">
+                            <menuItem title="Item 1" keyEquivalent="" id="Fod-YE-yCd">
                                 <connections>
                                     <action selector="menuItemAction:" target="F70-Q2-YR5" id="Wx6-Rm-6Kb"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Item 2" keyEquivalent="" id="hiQ-B9-MLB">
+                            <menuItem title="Item 2" keyEquivalent="" id="mHR-WN-NkU">
                                 <connections>
-                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="8OB-qv-Jgm"/>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="mdN-XC-Yea"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Item 3" keyEquivalent="" id="wVu-O1-uJw">
@@ -228,7 +228,17 @@
                                     <action selector="menuItemAction:" target="F70-Q2-YR5" id="jwD-qC-zit"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Item 4" keyEquivalent="" id="hB2-C3-yLR">
+                            <menuItem title="Item 4" keyEquivalent="" id="hiQ-B9-MLB">
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="8OB-qv-Jgm"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 5" keyEquivalent="" id="eDu-7i-Rnd">
+                                <connections>
+                                    <action selector="menuItemAction:" target="F70-Q2-YR5" id="Kce-k9-Q7Z"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Item 6" keyEquivalent="" id="hB2-C3-yLR">
                                 <connections>
                                     <action selector="menuItemAction:" target="F70-Q2-YR5" id="vvh-pT-IPX"/>
                                 </connections>
@@ -242,15 +252,14 @@
         <window title="KeyEquivelant" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <rect key="contentRect" x="335" y="390" width="480" height="358"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="358"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aCP-5h-OaG">
-                        <rect key="frame" x="210" y="173" width="81" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aCP-5h-OaG">
+                        <rect key="frame" x="200" y="162" width="81" height="32"/>
                         <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="bT6-nl-U00">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -260,8 +269,12 @@
                         </connections>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="aCP-5h-OaG" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="bOg-sx-Nl1"/>
+                    <constraint firstItem="aCP-5h-OaG" firstAttribute="centerY" secondItem="EiT-Mj-1SZ" secondAttribute="centerY" id="ePS-lX-3w1"/>
+                </constraints>
             </view>
-            <point key="canvasLocation" x="265" y="299"/>
+            <point key="canvasLocation" x="221" y="378"/>
         </window>
         <customObject id="F70-Q2-YR5" customClass="ViewController">
             <connections>

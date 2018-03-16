@@ -52,7 +52,31 @@
                                                        action:@selector(menuItemAction:)
                                                 keyEquivalent:@"B"];
         
-        item6.keyEquivalentModifierMask = NSEventModifierFlagControl;
+        NSMenuItem *separator = [NSMenuItem separatorItem];
+        
+        NSMenuItem *item8 = [[NSMenuItem alloc] initWithTitle:@"coding 8"
+                                                       action:@selector(menuItemAction:)
+                                                keyEquivalent:[NSString stringWithFormat:@"%c", NSCarriageReturnCharacter]];  // must use %c to avlid compile warning
+        
+        item8.keyEquivalentModifierMask = NSEventModifierFlagControl|NSEventModifierFlagCommand;
+        
+        NSMenuItem *item9 = [[NSMenuItem alloc] initWithTitle:@"coding 9"
+                                                       action:@selector(menuItemAction:)
+                                                keyEquivalent:[NSString stringWithFormat:@"%C", 0x001f]];       // must use %C, otherwise it is wrong
+        
+        item9.keyEquivalentModifierMask = NSEventModifierFlagControl|NSEventModifierFlagCommand;
+        
+        NSMenuItem *item10 = [[NSMenuItem alloc] initWithTitle:@"coding 10"
+                                                       action:@selector(menuItemAction:)
+                                                keyEquivalent:[NSString stringWithFormat:@"%C", 0x21df]];       // must use %C, otherwise it is wrong
+        
+        item10.keyEquivalentModifierMask = NSEventModifierFlagControl|NSEventModifierFlagCommand;
+        
+        NSMenuItem *item11 = [[NSMenuItem alloc] initWithTitle:@"coding 11"
+                                                        action:@selector(menuItemAction:)
+                                                 keyEquivalent:[NSString stringWithFormat:@"%C", 0x2198]];       // must use %C, otherwise it is wrong
+        
+        item11.keyEquivalentModifierMask = NSEventModifierFlagControl|NSEventModifierFlagCommand;
         
         [subMenu addItem:item1];
         [subMenu addItem:item2];
@@ -60,6 +84,11 @@
         [subMenu addItem:item4];
         [subMenu addItem:item5];
         [subMenu addItem:item6];
+        [subMenu addItem:separator];
+        [subMenu addItem:item8];
+        [subMenu addItem:item9];
+        [subMenu addItem:item10];
+        [subMenu addItem:item11];
         
         // item 4, item 5, item 6, automatically get ⇧ when displaying on UI.
     }
@@ -67,7 +96,6 @@
     item.submenu = subMenu;
     
     [menu addItem:item];
-    
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
